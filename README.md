@@ -1,10 +1,8 @@
-## Voto Beego Entorno de Desarrollo
+## MongoDB + Beego Development Environment
 
 
-Crear un proyecto beego
-docker run --rm -v "$(pwd)":/go/src/ -w /go/src beemongo bee new beego-docker
+# Create a new beego project using the beemongo image
+`docker run --rm -v "$(pwd)":/go/src/ -w /go/src beemongo bee new beego-docker`
 
 
-Si esta utilizando docker-machine
-Consulte la IP de la maquina docker con el comando
-docker-machine ls
+> If you are using docker-machine, look for the machine IP address with the command `docker-machine ls
