@@ -1,7 +1,7 @@
 ## MongoDB + Beego Development Environment
 
 
-# Create a new beego project using the beemongo image
+#### Create a new beego project using the beemongo image
 `docker run --rm -v "$(pwd)":/go/src/ -w /go/src beemongo bee new beego-docker`
 
 
