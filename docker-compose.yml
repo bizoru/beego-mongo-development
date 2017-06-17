@@ -13,6 +13,7 @@ services:
       - "./beego/code:/go/src/code"
     ports:
       - "8080:8080"
+
   mongodb:
     image: mongo
     expose:
@@ -20,6 +21,7 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: admin
       MONGO_INITDB_ROOT_PASSWORD: admin
+
   mongo-express:
     image: mongo-express
     restart: on-failure
@@ -32,3 +34,9 @@ services:
       ME_CONFIG_MONGODB_ADMINUSERNAME: admin
       ME_CONFIG_MONGODB_ADMINPASSWORD: admin
       ME_CONFIG_MONGODB_ENABLE_ADMIN: "true"
+
+  swagger-editor:
+    image: swaggerapi/swagger-editor
+    container_name: "swagger-editor"
+    ports:
+      - "8088:8080"

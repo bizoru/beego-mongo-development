@@ -1,6 +1,10 @@
 ## MongoDB + Beego Development Environment
 
 
+### Requirements
+You need to install docker and docker-compose
+
+
 #### Create a new beego project using the beemongo image
 `docker run --rm -v "$(pwd)":/go/src/ -w /go/src beemongo bee new beego-docker`
 
@@ -20,3 +24,5 @@ http://localhost:8080/ beego
 http://localhost:8000/ mongo-express
 
 http://localhost:4200/ angular4
+
+http://localhost:8088/ swagger-editor
