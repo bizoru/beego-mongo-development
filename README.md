@@ -22,10 +22,6 @@ beego/code, contains the source code for the beego API app
 | *URL* | *Application* |
 |---  | ----------- |
 | http://localhost:8081/ | beego          |
-|---
 | http://localhost:8000/ | mongo-express  |
-|---
 | http://localhost:4200/ | angular4       |
-|---
 | http://localhost:8088/ | swagger-editor |
-|---
