@@ -2,17 +2,19 @@ version: '3'
 
 services:
   angular:
+    container_name: "angular4"
     build: ./angular4
     volumes:
       - "./angular4/code:/angular/code"
     ports:
       - "4200:4200"
   beego:
+    container_name: "beego"
     build: ./beego
     volumes:
       - "./beego/code:/go/src/code"
     ports:
-      - "8080:8080"
+      - "8081:8080"
 
   mongodb:
     image: mongo
@@ -23,6 +25,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: admin
 
   mongo-express:
+    container_name: "mongo-express"
     image: mongo-express
     restart: on-failure
     ports:
